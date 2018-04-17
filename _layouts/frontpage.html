@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+
+      {%- if site.title -%}
+        <h1 class="ui inverted header">{{ site.title }}</h1>
+      {%- endif -%}
+
+      {%- if site.description -%}
+        <h2>{{ site.description }}</h2>
+      {%- endif -%}
+
+      <div class="ui huge primary button" href="{{ site.cta.url | relative_url }}">{{ site.cta.phrase}}<i class="right arrow icon"></i></div>
+
+      {{ content }}
+
+    </div>
+
+  </div>

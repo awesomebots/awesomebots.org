@@ -1,35 +1,23 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+<div class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="eight wide column">
+        <h4 class="ui inverted header">Contact</h4>
+        <div class="ui inverted link list">
+            {%- include social.html -%}
+        </div>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
+      <div class="three wide column">
+        {%- if site.title -%}
+        <h4 class="ui inverted header">{{ site.title | escape }}</h4>
+        {%- endif -%}
+        {%- if site.author -%}
+        <p>{{ site.author | escape }}</p>
+        {%- endif -%}
+        {%- if site.description -%}
         <p>{{- site.description | escape -}}</p>
+        {%- endif -%}
       </div>
     </div>
-
   </div>
-
-</footer>
+</div>

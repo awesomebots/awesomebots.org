@@ -1,7 +1,11 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "twitter_username:"
+title: Awesomebots
+author: ben kline
+email: info@awesomebots.org
+phone: 208-409-3025
+cta:
+  phrase: Learn More #ie sign-up
+  url: /about
+description: > # this means to ignore newlines until next entry
 
 # social links
 # twitter_username:
@@ -23,18 +27,23 @@ description: > # this means to ignore newlines until "twitter_username:"
 # - username: jekyll2
 #   instance: example.com
 
+#google:
+#  analytics:
+#  confirm_ownership:
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-
 date_format: "%b %-d, %Y"
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+# add the path to the pages in order as they should show up in the header
+header_pages:
+ - about.md
+ - blog.md
+
+# add the path to the auth pages - call to action button should be second
+auth_pages:
+- login.md
+- signup.md
 
 # Build settings
 markdown: kramdown
