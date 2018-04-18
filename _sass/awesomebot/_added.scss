@@ -1,4 +1,8 @@
 
+.content {
+  margin-top: 3em;
+  min-height: 500px;
+}
 
 .masthead.segment {
   min-height: 500px;
@@ -48,12 +52,7 @@
   padding-top: 5em;
   padding-bottom: 5em;
 }
-
-.footer.segment {
-  padding: 5em 0em;
-}
-
-.secondary.pointing.menu {
+.secondary.segment {
   display: none;
 }
 
@@ -61,12 +60,20 @@
   .ui.fixed.menu {
     display: none !important;
   }
-  .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
+  .secondary.segment .item,
+  .secondary.segment .menu {
     display: none;
   }
-  .secondary.pointing.menu  {
+  .secondary.segment  {
     display: block;
+  }
+
+  .simple.dropdown.item{
+    text-align: center;
+  }
+
+  .content{
+    min-height: 300px;
   }
   .masthead.segment {
     min-height: 300px;

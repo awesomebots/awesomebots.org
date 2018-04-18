@@ -2,10 +2,13 @@ title: Awesomebots
 author: ben kline
 email: info@awesomebots.org
 phone: 208-409-3025
-cta:
-  phrase: Learn More #ie sign-up
-  url: /about
 description: > # this means to ignore newlines until next entry
+
+
+collections:
+- posts
+- projects 
+
 
 # social links
 # twitter_username:
@@ -31,6 +34,10 @@ description: > # this means to ignore newlines until next entry
 #  analytics:
 #  confirm_ownership:
 
+cta:
+  phrase: Learn More #ie sign-up
+  url: /about
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 date_format: "%b %-d, %Y"
@@ -39,6 +46,7 @@ date_format: "%b %-d, %Y"
 header_pages:
  - about.md
  - blog.md
+ - project.md
 
 # add the path to the auth pages - call to action button should be second
 auth_pages:

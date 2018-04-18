@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="ui segment">
+  <div class="ui text container">
+    {%- if site.projects.size > 0 -%}
+      <h2 class="post-list-heading">Bot Projects</h2>
+      <ul class="post-list">
+        {%- for project in site.projects -%}
+        <li class="ui segment green">
+          <h3><a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ project.date | date: date_format }}</span>
+          {%- if site.show_excerpts -%}
+            {{ project.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+  </div>
+</div>
