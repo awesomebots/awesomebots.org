@@ -4,10 +4,9 @@ email: info@awesomebots.org
 phone: 208-409-3025
 description: > # this means to ignore newlines until next entry
 
-
 collections:
 - posts
-- projects 
+- projects
 
 
 # social links
