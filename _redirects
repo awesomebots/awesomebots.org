@@ -1,1 +1,3 @@
-http://eloquent-mcnulty-33a470.netlify.com/* http://awesomebots.org/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+http://eloquent-mcnulty-33a470.netlify.com/* http://awesomebots.org/:splat 301!omain t
